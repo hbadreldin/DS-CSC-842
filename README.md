@@ -1,7 +1,7 @@
 # DS-CSC-842 Cycle02: The IP locator - iplocator.pl
 
 # Purpose:
-This script find the physical interface where an IP address is located and reports various useful information such as VLAN ID, network name, switch name, and the interface number & description. The scripts crawl the network findings pieces of information and use it as input to get more information until it gets to the specific switch interface and IP address location. 
+This script locates the physical interface where an IP address is transmitting and reports various useful information such as VLAN ID, network name, switch name, and the interface number & description. The scripts crawl the network findings pieces of information and use it as input to get more additional until it gets to the specific switch interface and displays the location. 
 
 # System Requirements: 
 - Linux/Unix environment with Perl >= 5.14.2
@@ -15,7 +15,8 @@ This script find the physical interface where an IP address is located and repor
 ./iplocator.pl `<IPv4 address>`
 
 # Sample output:
-<pre> #################################################################
+<pre>
+#################################################################
 ##	The IP locator v1.0 - IP address <> Physical location in LAN 
 ##				        Query for 10.14.129.67 
 ##		      Query Date & Time: 09/16/2016 11:23:14 
@@ -29,7 +30,8 @@ This script find the physical interface where an IP address is located and repor
 >> MAC:00:A0:F8:D1:59:FB 		Age#:4 minutess 
 >> ----------------------------------------------------------------- 
 >> Interface:Gi1/0/27 Desc#:Cube6 Status:Online 
->> -------------------------End of Report--------------------------- </pre>
+>> -------------------------End of Report--------------------------- 
+</pre>
 
 EOF
 
