@@ -27,7 +27,7 @@ The scripts crawl the network findings pieces of information and use it as input
 \-----------------------------------------------------------------
 - VLAN: Austin-West-Contract 	VLAN#:771
 \-----------------------------------------------------------------
-- MAC:00:A0:F8:D1:59:FB 		Age#:4 minutes
+- MAC:00:A0:F8:D1:59:FB 		Age#:4 minutess
 \-----------------------------------------------------------------
 - Interface:Gi1/0/27 Desc#:Cube6 Status:Online
 \-------------------------End of Report---------------------------
