@@ -33,6 +33,13 @@ This script locates the physical interface where an IP address is transmitting a
 >> -------------------------End of Report--------------------------- 
 </pre>
 
+# License:
+
+This application is covered by the Creative Commons BY-SA license.
+
+    https://creativecommons.org/licenses/by-sa/4.0/
+    https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
 EOF
 
 
