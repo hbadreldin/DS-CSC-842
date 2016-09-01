@@ -16,7 +16,7 @@ The scripts crawl the network findings pieces of information and use it as input
 ./iplodaotr.pl <IPv4 address>
 
 # Sample output:
-\#################################################################
+\#################################################################\n\n
 \#	The IP locator v1.0 - IP address <> Physical location in LAN
 \#				        Query for 10.14.129.67 
 \#		      Query Date & Time: 09/16/2016 11:23:14
