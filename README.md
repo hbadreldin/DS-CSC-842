@@ -15,11 +15,11 @@ This script find the physical interface where an IP address is located and repor
 ./iplocator.pl <IPv4 address>
 
 # Sample output:
-\################################################################# 
-\##	The IP locator v1.0 - IP address <> Physical location in LAN 
-\##				        Query for 10.14.129.67 
-\##		      Query Date & Time: 09/16/2016 11:23:14 
-\################################################################# 
+\#################################################################\
+\##	The IP locator v1.0 - IP address <> Physical location in LAN \
+\##				        Query for 10.14.129.67 \
+\##		      Query Date & Time: 09/16/2016 11:23:14 \
+\################################################################# \
 \>> Router:austrtr01 Router 		IP:172.16.127.2 \
 \>> ----------------------------------------------------------------- \
 \>> Switch:austswtsh37 Switch 	IP:172.16.10.50 \
