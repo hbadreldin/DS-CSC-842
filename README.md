@@ -12,7 +12,7 @@ This script find the physical interface where an IP address is located and repor
 - The script requires a valid username and password with SSH access to all switches. The access must be READ-ONLY
 
 # How it works: 
-./iplocator.pl \\<IPv4 address>
+./iplocator.pl <IPv4 address>
 
 # Sample output:
 \#################################################################\
@@ -31,5 +31,5 @@ This script find the physical interface where an IP address is located and repor
 \>> Interface:Gi1/0/27 Desc#:Cube6 Status:Online \
 \>> -------------------------End of Report--------------------------- 
 
-EOFF
+EOF
 
