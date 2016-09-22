@@ -6,7 +6,7 @@ I have crated 2 scripts, ipwatch.pl is used if you want to be notified when spec
 
 # System Requirements: 
 - Linux/Unix environment with Perl >= 5.14.2
-- Scripts must be set to execute (chmod +x <SCRIPT>)
+- Scripts must be set to execute (chmod +x `<SCRIPT>`)
 
 # Network Requirements:
 - Scripts can execute remote commands on Cisco switches & routers that are running Cisco IOS 12.x or 15.x
