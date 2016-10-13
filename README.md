@@ -24,6 +24,18 @@ Then add the following and save: */5 * * * * `<path to the script>` >> /dev/null
 Example:
 */5 * * * * /home/user/nms/noflap.pl >> /dev/null 2>&1
 
+# Sample log Data:
+- EIGRP: 
+Oct 16 08:58:09.352 EST: %DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 172.20.13.97 (Tunnel31) is up: new adjacency
+Oct 16 08:59:47.361 EST: %DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 172.20.13.97 (Tunnel31) is down: Interface PEER-TERMINATION received
+Oct 16 08:59:51.217 EST: %DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 172.20.13.97 (Tunnel31) is up: new adjacency
+Oct 16 09:01:27.230 EST: %DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 172.20.13.97 (Tunnel31) is down: Interface PEER-TERMINATION received
+
+- BGP: 
+Dec 12 12:18:43.229 EST: %BGP-5-ADJCHANGE: Neighbor 205.116.72.3 Down BGP protocol initialization
+Dec 12 12:18:51.981 EST: %BGP-5-ADJCHANGE: Neighbor 205.116.72.3 Up
+Dec 12 12:21:54.183 EST: %BGP-5-ADJCHANGE: Neighbor 205.116.72.3 Down BGP protocol initialization
+
 
 # License:
 
