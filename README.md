@@ -1,25 +1,33 @@
-# DS-CSC-842 Cycle05: The Network Bot v1.0
-# iplocator.pl, ipwatch.pl, macwatch.pl
+# DS-CSC-842 Cycle08: The NoFlap Checker v1.0
+# noflap.pl
 
 # Purpose:
-I have crated 2 scripts, ipwatch.pl is used if you want to be notified when specific IP address shows up on the network, and macwatch.pl is used to notify the administrators if specific MAC address is present on the network. Both scripts use the iplocator.pl script to locates the physical interface where an IP/MAC address is found and reports various useful information such as VLAN ID, network name, switch name, and the interface number & description. The scripts crawl the network findings pieces of information and use it as input to get more additional until it gets to the specific switch interface and displays the location. Both scripts will send an email message to the specified emails address in the script vairbales. 
+Monitoring a global network is very difficult task to do without having the proper tools in place. Most of the time getting good tools will cost you very high amount of investment for initial deployment, and the reoccurring cost will also be high (if you go first grade tools). I have created this script to monitor our routing protocols in our internal and external networks. This script is very basic and it does provide passive monitoring capabilities for our EIGRP (Internal) and BGP (External) peering status. It will send an email if it sees routing protocol relationships go down or reestablish. The email will be sent to the NOC and they can escalate and take the proper actions. Being proactive is the main drive behind this tool.    
 
 # System Requirements: 
-- Linux/Unix environment with Perl >= 5.14.2
-- Scripts must be set to execute (chmod +x `<SCRIPT>`)
+- Linux with Perl >= 5.14.2
+- Scripts set with +x (chmod +x `<SCRIPT>`)
+- Log files set to +RO for the specific user running the scripts 
+
+Network:
+
 
 # Network Requirements:
-- Scripts can execute remote commands on Cisco switches & routers that are running Cisco IOS 12.x or 15.x
-- Scripts should have access to DHCP logs
-- The iplocator.pl script requires a valid username and password with SSH access to all switches and routers. The access must be READ-ONLY
-- The Linux server where the tool will run must be permitted on the firewalls for port 22 toward all network gear and log servers
+- Network switches, routers and firewalls to send logs to a log server
+- Logging should be enabled in the BGP process
+    - bgp log-neighbor-changes 
 
 # How it works: 
-Watch for IP address: 
-./ipwatch.pl `<IP address in decimal format>&` 
+Syntax:
+crontab –e 
+Then add the following and save: */5 * * * * `<path to the script>` >> /dev/null 2>&1
+   OR
+vi/etc/cron.d
+Then add the following and save: */5 * * * * `<path to the script>` >> /dev/null 2>&1
 
-Watch for MAC address: 
-./macwatch.pl `<MAC address in colon format>&`
+Example:
+*/5 * * * * /home/user/nms/noflap.pl >> /dev/null 2>&1
+
 
 # License:
 
