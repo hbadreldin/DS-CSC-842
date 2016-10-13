@@ -9,20 +9,16 @@ Monitoring a global network is very difficult task to do without having the prop
 - Scripts set with +x (chmod +x `<SCRIPT>`)
 - Log files set to +RO for the specific user running the scripts 
 
-Network:
-
-
 # Network Requirements:
 - Network switches, routers and firewalls to send logs to a log server
 - Logging should be enabled in the BGP process
     - bgp log-neighbor-changes 
 
 # How it works: 
-Syntax:
-crontab –e 
+- crontab –e 
 Then add the following and save: */5 * * * * `<path to the script>` >> /dev/null 2>&1
-   OR
-vi/etc/cron.d
+   # OR
+- vi/etc/cron.d
 Then add the following and save: */5 * * * * `<path to the script>` >> /dev/null 2>&1
 
 Example:
