@@ -20,13 +20,14 @@ my $subject  = "Subject: **** ALERT: Routing notification message - $currentDate
 my $from     = "From: network\@domain.com\n";
 my $to       = "To: youremail\@domain.com\n";
 my @bgp = ();
+my @eigrp = ();
 
 ########### grep through switch logs and if found send e-mail #####################
 open SwitchLogs, $logFile or die "Could not open $logFile: $!"; 
 while (<SwitchLogs>) {
     chomp;
     push @bgp, "$_ \n" if /$logsIncDate/ && /BGP-5-ADJCHANGE/;
-	push @eigrp, "$_ \n" if /$logsIncDate/ && /DUAL-5-NBRCHANGE/;
+    push @eigrp, "$_ \n" if /$logsIncDate/ && /DUAL-5-NBRCHANGE/;
 
 }
 close SwitchLogs;
