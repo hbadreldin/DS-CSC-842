@@ -1,0 +1,56 @@
+<style type="text/css">
+.formstyle{
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+.formstyle-heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.formstyle label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+.formstyle label > span{
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+.formstyle span.required{
+    color:red;
+}
+
+.formstyle input.input-area{
+    width: 250px;
+   
+}
+
+.formstyle input.input-area,
+.formstyle .input-area:focus,
+
+.formstyle input[type=submit],
+.formstyle input[type=button]{
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.formstyle input[type=submit]:hover,
+.formstyle input[type=button]:hover{
+    background: #EA7B00;
+    color: #fff;
+}
+</style>
