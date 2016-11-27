@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 ###################################################################################
 # ACLAuditor.pl: Audit firewall objects and determine which ones can be removed   #
-#					It looks up objects that are not being called inside any ACL. #
+#		It looks up objects that are not being called inside any ACL. 	  #
 ###################################################################################
 use strict;
 use warnings;
